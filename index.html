@@ -16,9 +16,10 @@
 <body>
     <div class="nav">
             <img src="img/spark_icon.png">
-            <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
-            <a href="#news"><i class="fas fa-list"></i> Commands</a>
-            <a href="#contact"><i class="fas fa-wrench"></i> Panel</a>
+            <a href="#home" class="active" id="link"><i class="fas fa-home"></i> Home</a>
+            <a href="#news" id="link"><i class="fas fa-list"></i> Commands</a>
+            <a href="#contact" id="link"><i class="fas fa-wrench"></i> Panel</a>
+            <a href="https://discordapp.com/api/oauth2/authorize?client_id=573164865405976588&permissions=8&redirect_uri=https%3A%2F%2Fspark.itsmmgamer.tk%2F&scope=bot"><button class="inv"><span class="">Add the bot</span></button></a>
             </div> 
     <div class="outer">
         <div class="middle">
@@ -26,7 +27,7 @@
                 <div class="logo"><img src="img/spark_icon.png"></div>
                 <div class="text-small">Spark is:</div>
                 <div class="text-typed"><span id="typed"></span></div>
-                <button class="down-button" type="button"><i class="fas fa-caret-down"></i></button>
+                <button class="down-button" id="button"><i class="fas fa-caret-down"></i></button>
             </div>
         </div>
     </div>
@@ -77,10 +78,17 @@
             loop: true,
         });
     });
-        $("button").click(function() {
+        $(".down-button").click(function() {
         $('html, body').animate({
         scrollTop: ($('#title-scroll').offset().top-100)
         },1000);
         });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '573165350649069589',
+      channel: '573258344190574688',
+      shard: 'https://disweb.deploys.io'
+    })
+  </script>
 </html>

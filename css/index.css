@@ -91,7 +91,7 @@ html, body {
   }
   
   /* Style the links inside the navigation bar */
-  .nav a {
+  .nav #link {
     position: relative;
     float: left;
     /* display: block; */
@@ -223,3 +223,44 @@ html, body {
 .footer-text a{
     color: inherit;
 }
+
+.inv {
+    margin: 10px;
+    margin-top: 3px;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    float: right;
+    border: 3px solid #FBAC36;
+    transition: all 0.5s;
+    background: black;
+    color: white;
+
+    
+}
+
+
+.inv span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .inv span:after {
+    content: '▶';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .inv:hover span {
+    padding-right: 25px;
+  }
+  
+  .inv:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
