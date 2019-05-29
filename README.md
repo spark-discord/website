@@ -1,4 +1,4 @@
-# Spark. | Website
+# ![Logo][https://spark.itsmmgamer.tk/img/spark_icon.png] Spark. | Website
 
 Front end static HTML & CSS website.
 
